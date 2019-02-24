@@ -3,12 +3,12 @@ let name = 'Dany';
 console.log (`Hello ${name}`);
 //Enter a name
 
-let techlevel = 2;
+let techlevel = 4;
 //enter a level. It will determine the suggested move combo. 
 
 
 const randomNumber = 
-Math.floor(Math.random()*32);
+Math.floor(Math.random()*30);
 let beginner='';
 switch (randomNumber){
     case 0: 
@@ -30,6 +30,8 @@ switch (randomNumber){
     beginner = 'Backslide (one leg extended)';
        break;
     case 6: 
+    beginner = 'Backwards Knee Hook'
+      break;
     beginner = 'Backwards Pole Switch';
        break;
     case 7: 
@@ -101,9 +103,7 @@ switch (randomNumber){
    case 29:
    beginner = 'Log Roll'
       break;
-   case 30:
-   beginner = 'Backwards Knee Hook'
-      break;
+
   };
 
   const level1Number = 
@@ -143,6 +143,44 @@ switch (level2Number){
       break;
         
       }; 
+
+ const level3Number = 
+   Math.floor(Math.random()*4);
+   let tech3='';
+      switch (level3Number){
+         case 0: 
+          tech3= 'Advance Jamilla';
+             break;
+         case 1:
+          tech3 = 'Straight Leg Hangback';
+             break;
+          case 2:
+          tech3  = 'Outside and Inside leghang switch';
+            break;
+         case 3:
+         tech3 = 'Baby Butterfly';
+            break;
+              
+            }; 
+
+const level4Number = 
+   Math.floor(Math.random()*4);
+      let tech4='';
+      switch (level4Number){
+         case 0: 
+         tech4= 'Extended Butterfly';
+            break;
+         case 1:
+         tech4 = 'Aerial Stradle';
+            break; 
+         case 2:
+         tech4  = 'Star Gazer';
+            break;
+         case 3:
+         tech4 = 'Aerial D Shape';
+            break;
+                       
+      }; 
       
     
 const moreRandom = 
@@ -181,6 +219,12 @@ else if(techlevel == 1.5) {
 }
 else if(techlevel == 2) {
    console.log (`Hey, try to do ${tech2}, ${tech1}, and then try to ${bonus}`);
+} 
+else if(techlevel == 3) {
+   console.log (`Hey, try to do ${tech2}, ${tech3}, and then try to ${bonus}`);
+} 
+else if(techlevel == 4) {
+   console.log (`Hey, try to do ${tech3}, ${tech4}, and then try to ${bonus}`);
 } 
 else {
 console.log(`Make it all up!`);  
