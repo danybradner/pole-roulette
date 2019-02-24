@@ -3,7 +3,7 @@ let name = 'Dany';
 console.log (`Hello ${name}`);
 //Enter a name
 
-let techlevel = 4;
+let techlevel = 6;
 //enter a level. It will determine the suggested move combo. 
 
 
@@ -164,7 +164,7 @@ switch (level2Number){
             }; 
 
 const level4Number = 
-   Math.floor(Math.random()*4);
+   Math.floor(Math.random()*6);
       let tech4='';
       switch (level4Number){
          case 0: 
@@ -179,8 +179,74 @@ const level4Number =
          case 3:
          tech4 = 'Aerial D Shape';
             break;
-                       
+         case 5:
+         tech4 = 'Shoulder Mount'
+            break;                 
       }; 
+   const level5Number = 
+      Math.floor(Math.random()*5);
+         let tech5='';
+         switch (level5Number){
+            case 0: 
+            tech5= 'Split Grip Ayesha';
+               break;
+            case 1:
+            tech5 = 'Shoulder mount to leg hang';
+               break; 
+            case 2:
+            tech5  = 'Brass Monkey';
+               break;
+            case 3:
+            tech5 = 'Devil`s shuffle';
+               break;
+            case 4:
+            tech5= 'Twisted Grip Ayesha';
+               break;
+                          
+         }; 
+const level6Number = 
+   Math.floor(Math.random()*5);
+      let tech6='';
+         switch (level6Number){
+            case 0: 
+            tech6= 'Aerial Shoulder Mount';
+               break;
+            case 1:
+               tech6 = 'Jade Split';
+                  break; 
+            case 2:
+               tech6  = 'Layback to handstand';
+                  break;
+            case 3:
+               tech6 = 'Jamilla up to the pole';
+                  break;
+            case 4:
+               tech6= 'Broken Doll';
+                  break;
+                             
+            };
+const level7Number = 
+   Math.floor(Math.random()*5);
+      let tech7='';
+         switch (level6Number){
+               case 0: 
+                  tech7= 'Split Grip Handspring';
+                     break;
+               case 1:
+                  tech7 = 'Twister Grip Handspring';
+                      break; 
+               case 2:
+                  tech7  = 'Shoulder Mount Circle';
+                      break;
+               case 3:
+                  tech7 = 'Arms only Climb';
+                      break;
+               case 4:
+                  tech7 = 'Iron X';
+                      break;
+                                      
+}; 
+           
       
     
 const moreRandom = 
@@ -225,6 +291,15 @@ else if(techlevel == 3) {
 } 
 else if(techlevel == 4) {
    console.log (`Hey, try to do ${tech3}, ${tech4}, and then try to ${bonus}`);
+} 
+else if(techlevel == 5) {
+   console.log (`Hey, try to do ${tech4}, ${tech5}, and then try to ${bonus}`);
+} 
+else if(techlevel == 6) {
+   console.log (`Hey, try to do ${tech5}, ${tech6}, and then try to ${bonus}`);
+} 
+else if(techlevel == 7) {
+   console.log (`Hey, try to do ${tech6}, ${tech7}, and then try to ${bonus}`);
 } 
 else {
 console.log(`Make it all up!`);  
