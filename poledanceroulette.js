@@ -3,7 +3,7 @@ let name = 'Dany';
 console.log (`Hello ${name}`);
 //Enter a name
 
-let techlevel = 7;
+let techlevel = 4;
 //enter a level. It will determine the suggested move combo. 
 
 
